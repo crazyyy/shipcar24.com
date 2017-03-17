@@ -1,7 +1,7 @@
 var hosts = {
   "api": "//checkout.montway.com",
   "callmenow": "//callmenow.montway.com/",
-  "search": "//montweb.montway.com/es"
+  "search": "//www.montway.com/es"
 };
 
 function isSmallScreenLayout() {
@@ -7679,22 +7679,22 @@ function() {
         if (this._events || (this._events = {}), "error" === a && (!this._events.error || e.isObject(this._events.error) && !this._events.error.length)) throw b = arguments[1], b instanceof Error ? b : TypeError('Uncaught, unspecified "error" event.');
         if (c = this._events[a], e.isUndefined(c)) return !1;
         if (e.isFunction(c)) switch (arguments.length) {
-            case 1:
-              c.call(this);
-              break;
-            case 2:
-              c.call(this, arguments[1]);
-              break;
-            case 3:
-              c.call(this, arguments[1], arguments[2]);
-              break;
-            default:
-              for (d = arguments.length, f = new Array(d - 1), g = 1; d > g; g++) f[g - 1] = arguments[g];
-              c.apply(this, f)
-          } else if (e.isObject(c)) {
+          case 1:
+            c.call(this);
+            break;
+          case 2:
+            c.call(this, arguments[1]);
+            break;
+          case 3:
+            c.call(this, arguments[1], arguments[2]);
+            break;
+          default:
             for (d = arguments.length, f = new Array(d - 1), g = 1; d > g; g++) f[g - 1] = arguments[g];
-            for (h = c.slice(), d = h.length, g = 0; d > g; g++) h[g].apply(this, f)
-          }
+            c.apply(this, f)
+        } else if (e.isObject(c)) {
+          for (d = arguments.length, f = new Array(d - 1), g = 1; d > g; g++) f[g - 1] = arguments[g];
+          for (h = c.slice(), d = h.length, g = 0; d > g; g++) h[g].apply(this, f)
+        }
         return !0
       }, d.prototype.addListener = function(a, b) {
         var c;
@@ -20933,8 +20933,8 @@ function() {
               var m = b.params[l];
               m ? (m.name = m.name || l, null != c[l] && (i[m.type] ? j[m.name] = i[m.type](m, c[l], l) : j[m.name] = c[l], m["default"] && j[m.name] === m["default"] && delete j[m.name])) : j[l] = c[l]
           }
-        for (f = 0; f < b.requireParamKeys.length; f++)
-          if (!j.hasOwnProperty(b.requireParamKeys[f])) throw new TypeError("Missing required parameter " + b.requireParamKeys[f]);
+          for (f = 0; f < b.requireParamKeys.length; f++)
+            if (!j.hasOwnProperty(b.requireParamKeys[f])) throw new TypeError("Missing required parameter " + b.requireParamKeys[f]);
         return g.query = j, a.request(g, d)
       }
 
@@ -45945,11 +45945,11 @@ define("montweb-client-app/adapters/application", ["exports", "ember", "montweb-
             loc: {
               source: null,
               start: {
-                line: 33,
+                line: 34,
                 column: 20
               },
               end: {
-                line: 44,
+                line: 45,
                 column: 20
               }
             },
@@ -45980,11 +45980,11 @@ define("montweb-client-app/adapters/application", ["exports", "ember", "montweb-
             loc: {
               source: null,
               start: {
-                line: 74,
+                line: 75,
                 column: 20
               },
               end: {
-                line: 85,
+                line: 86,
                 column: 20
               }
             },
@@ -46015,11 +46015,11 @@ define("montweb-client-app/adapters/application", ["exports", "ember", "montweb-
             loc: {
               source: null,
               start: {
-                line: 110,
+                line: 111,
                 column: 20
               },
               end: {
-                line: 119,
+                line: 120,
                 column: 20
               }
             },
@@ -46056,7 +46056,7 @@ define("montweb-client-app/adapters/application", ["exports", "ember", "montweb-
             column: 0
           },
           end: {
-            line: 127,
+            line: 128,
             column: 0
           }
         },
@@ -46095,6 +46095,14 @@ define("montweb-client-app/adapters/application", ["exports", "ember", "montweb-
         e.setAttribute(n, "class", "calculator-title");
         var r = e.createTextNode("Get an Instant Quote");
         e.appendChild(n, r), e.appendChild(a, n);
+        var n = e.createTextNode("\n    ");
+        e.appendChild(a, n);
+        var n = e.createElement("h2");
+        e.setAttribute(n, "class", "calculator-title version-alt visible-xs visible-sm");
+        var r = e.createElement("a");
+        e.setAttribute(r, "href", "tel:8886668929"), e.setAttribute(r, "class", "tel");
+        var l = e.createTextNode("(888) 666-8929");
+        e.appendChild(r, l), e.appendChild(n, r), e.appendChild(a, n);
         var n = e.createTextNode("\n\n    ");
         e.appendChild(a, n);
         var n = e.createComment(" Step 1 ");
@@ -46327,13 +46335,13 @@ define("montweb-client-app/adapters/application", ["exports", "ember", "montweb-
       buildRenderNodes: function(e, t, a) {
         var n = e.childAt(t, [0]),
           r = e.childAt(n, [1]),
-          l = e.childAt(n, [7]),
+          l = e.childAt(n, [9]),
           i = e.childAt(l, [1]),
           o = e.childAt(l, [3]),
-          c = e.childAt(n, [13]),
+          c = e.childAt(n, [15]),
           d = e.childAt(c, [1]),
           s = e.childAt(c, [3]),
-          p = e.childAt(n, [19]),
+          p = e.childAt(n, [21]),
           u = e.childAt(p, [1]),
           m = new Array(15);
         return m[0] = e.createAttrMorph(n, "class"), m[1] = e.createElementMorph(n), m[2] = e.createAttrMorph(r, "class"), m[3] = e.createUnsafeMorphAt(e.childAt(r, [1]), 3, 3), m[4] = e.createMorphAt(e.childAt(i, [1]), 1, 1), m[5] = e.createMorphAt(e.childAt(i, [3]), 1, 1), m[6] = e.createMorphAt(e.childAt(o, [1]), 1, 1), m[7] = e.createMorphAt(e.childAt(o, [3, 1]), 3, 3), m[8] = e.createMorphAt(e.childAt(d, [1]), 1, 1), m[9] = e.createMorphAt(e.childAt(d, [3]), 1, 1), m[10] = e.createMorphAt(e.childAt(s, [1]), 1, 1), m[11] = e.createMorphAt(e.childAt(s, [3, 1]), 3, 3), m[12] = e.createMorphAt(e.childAt(u, [1]), 1, 1), m[13] = e.createMorphAt(e.childAt(u, [3]), 1, 1), m[14] = e.createMorphAt(e.childAt(p, [3, 1, 1]), 3, 3), m
@@ -46370,86 +46378,86 @@ define("montweb-client-app/adapters/application", ["exports", "ember", "montweb-
         ]]],
         ["inline", "partial", ["calculator/partials/ship-from"],
           [],
-          ["loc", [null, [15, 16],
-            [15, 59]
+          ["loc", [null, [16, 16],
+            [16, 59]
           ]]
         ],
         ["inline", "partial", ["calculator/partials/ship-to"],
           [],
-          ["loc", [null, [19, 16],
-            [19, 57]
+          ["loc", [null, [20, 16],
+            [20, 57]
           ]]
         ],
         ["inline", "partial", ["calculator/partials/transport-type"],
           [],
-          ["loc", [null, [25, 16],
-            [25, 64]
+          ["loc", [null, [26, 16],
+            [26, 64]
           ]]
         ],
         ["block", "button-steppable", [],
           ["model", ["subexpr", "@mut", [
-              ["get", "calculation", ["loc", [null, [34, 30],
-                [34, 41]
+              ["get", "calculation", ["loc", [null, [35, 30],
+                [35, 41]
               ]]]
             ],
             [],
             []
-          ], "tagName", "button", "step", "step-1", "nextStep", "step-2", "tabindex", "3", "valuePath1", "route.addressTo", "valuePath2", "route.addressFrom", "class", "btn btn-primary btn-lg btn-block-xs calculator-button"], 0, null, ["loc", [null, [33, 20],
-            [44, 41]
+          ], "tagName", "button", "step", "step-1", "nextStep", "step-2", "tabindex", "3", "valuePath1", "route.addressTo", "valuePath2", "route.addressFrom", "class", "btn btn-primary btn-lg btn-block-xs calculator-button"], 0, null, ["loc", [null, [34, 20],
+            [45, 41]
           ]]
         ],
         ["inline", "partial", ["calculator/partials/vehicle-make"],
           [],
-          ["loc", [null, [57, 16],
-            [57, 62]
+          ["loc", [null, [58, 16],
+            [58, 62]
           ]]
         ],
         ["inline", "partial", ["calculator/partials/vehicle-model"],
           [],
-          ["loc", [null, [61, 16],
-            [61, 63]
+          ["loc", [null, [62, 16],
+            [62, 63]
           ]]
         ],
         ["inline", "partial", ["calculator/partials/vehicle-condition"],
           [],
-          ["loc", [null, [67, 16],
-            [67, 67]
+          ["loc", [null, [68, 16],
+            [68, 67]
           ]]
         ],
         ["block", "button-steppable", [],
           ["model", ["subexpr", "@mut", [
-              ["get", "calculation", ["loc", [null, [75, 30],
-                [75, 41]
+              ["get", "calculation", ["loc", [null, [76, 30],
+                [76, 41]
               ]]]
             ],
             [],
             []
-          ], "tagName", "button", "step", "step-2", "tabindex", "5", "nextStep", "step-3", "valuePath1", "make", "valuePath2", "model", "class", "btn btn-primary btn-lg btn-block-xs calculator-button"], 1, null, ["loc", [null, [74, 20],
-            [85, 41]
+          ], "tagName", "button", "step", "step-2", "tabindex", "5", "nextStep", "step-3", "valuePath1", "make", "valuePath2", "model", "class", "btn btn-primary btn-lg btn-block-xs calculator-button"], 1, null, ["loc", [null, [75, 20],
+            [86, 41]
           ]]
         ],
         ["inline", "partial", ["calculator/partials/customer-email"],
           [],
-          ["loc", [null, [97, 16],
-            [97, 64]
+          ["loc", [null, [98, 16],
+            [98, 64]
           ]]
         ],
         ["inline", "partial", ["calculator/partials/shipping-date"],
           [],
-          ["loc", [null, [101, 16],
-            [101, 63]
+          ["loc", [null, [102, 16],
+            [102, 63]
           ]]
         ],
         ["block", "bootstrap-element", [],
           ["tagName", "button", "type", "submit", "tabindex", "7", "loadingText", "CALCULATING...", "resetText", ["subexpr", "@mut", [
-              ["get", "buttonEnabled", ["loc", [null, [115, 34],
-                [115, 47]
+              ["get", "buttonEnabled", ["loc", [null, [116, 34],
+                [116, 47]
               ]]]
             ],
             [],
             []
-          ], "class", "btn btn-primary btn-lg btn-block-xs calculator-button"], 2, null, ["loc", [null, [110, 20],
-            [119, 42]
+          ], "class", "btn btn-primary btn-lg btn-block-xs calculator-button"], 2, null, ["loc", [null, [111, 20],
+            [120, 42]
           ]]
         ]
       ],
@@ -51724,7 +51732,7 @@ define("montweb-client-app/adapters/application", ["exports", "ember", "montweb-
   }
 }), runningTests ? require("montweb-client-app/tests/test-helper") : require("montweb-client-app/app").default.create({
   name: "montweb-client-app",
-  version: "0.0.0+e45c92c2"
+  version: "0.0.0+83caf10b"
 });
 ! function(a) {
   var b = /iPhone/i,
