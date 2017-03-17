@@ -1,7 +1,7 @@
 /*-----------------------------------------------------------------------------------
 
- 	Shortcode JS - All shortcode jQuery
- 
+  Shortcode JS - All shortcode jQuery
+
 -----------------------------------------------------------------------------------*/
 
 /* ========================================================
@@ -24,14 +24,14 @@
  * ======================================================== */
 
 
-!function( $ ){
+! function($) {
 
   "use strict"
 
- /* TAB CLASS DEFINITION
-  * ==================== */
+  /* TAB CLASS DEFINITION
+   * ==================== */
 
-  var Tab = function ( element ) {
+  var Tab = function(element) {
     this.element = $(element)
   }
 
@@ -39,43 +39,42 @@
 
     constructor: Tab
 
-  , show: function () {
-      var $this = this.element
-        , $ul = $this.closest('ul:not(.dropdown-menu)')
-        , selector = $this.attr('data-target')
-        , previous
-        , $target
+    ,
+    show: function() {
+      var $this = this.element,
+        $ul = $this.closest('ul:not(.dropdown-menu)'),
+        selector = $this.attr('data-target'),
+        previous, $target
 
       if (!selector) {
         selector = $this.attr('href')
         selector = selector && selector.replace(/.*(?=#[^\s]*$)/, '') //strip for ie7
       }
 
-      if ( $this.parent('li').hasClass('active') ) return
+      if ($this.parent('li').hasClass('active')) return
 
       previous = $ul.find('.active a').last()[0]
 
       $this.trigger({
-        type: 'show'
-      , relatedTarget: previous
+        type: 'show',
+        relatedTarget: previous
       })
 
       $target = $(selector)
 
       this.activate($this.parent('li'), $ul)
-      this.activate($target, $target.parent(), function () {
+      this.activate($target, $target.parent(), function() {
         $this.trigger({
-          type: 'shown'
-        , relatedTarget: previous
+          type: 'shown',
+          relatedTarget: previous
         })
       })
     }
 
-  , activate: function ( element, container, callback) {
-      var $active = container.find('> .active')
-        , transition = callback
-            && $.support.transition
-            && $active.hasClass('fade')
+    ,
+    activate: function(element, container, callback) {
+      var $active = container.find('> .active'),
+        transition = callback && $.support.transition && $active.hasClass('fade')
 
       function next() {
         $active
@@ -92,7 +91,7 @@
           element.removeClass('fade')
         }
 
-        if ( element.parent('.dropdown-menu') ) {
+        if (element.parent('.dropdown-menu')) {
           element.closest('li.dropdown').addClass('active')
         }
 
@@ -108,13 +107,13 @@
   }
 
 
- /* TAB PLUGIN DEFINITION
-  * ===================== */
+  /* TAB PLUGIN DEFINITION
+   * ===================== */
 
-  $.fn.tab = function ( option ) {
-    return this.each(function () {
-      var $this = $(this)
-        , data = $this.data('tab')
+  $.fn.tab = function(option) {
+    return this.each(function() {
+      var $this = $(this),
+        data = $this.data('tab')
       if (!data) $this.data('tab', (data = new Tab(this)))
       if (typeof option == 'string') data[option]()
     })
@@ -123,55 +122,55 @@
   $.fn.tab.Constructor = Tab
 
 
- /* TAB DATA-API
-  * ============ */
+  /* TAB DATA-API
+   * ============ */
 
-  $(function () {
-    $('body').on('click.tab.data-api', '[data-toggle="tab"], [data-toggle="pill"]', function (e) {
+  $(function() {
+    $('body').on('click.tab.data-api', '[data-toggle="tab"], [data-toggle="pill"]', function(e) {
       e.preventDefault()
       $(this).tab('show')
     })
   })
 
-}( window.jQuery );
+}(window.jQuery);
 
 
 
 /*-----------------------------------------------------------------------------------*/
-/*	jQuery Toggles
-/*-----------------------------------------------------------------------------------*/	
+/*  jQuery Toggles
+/*-----------------------------------------------------------------------------------*/
 //Hide (Collapse) the toggle containers on load
-	jQuery(".st-toggle-content").hide(); 
-	//Switch the "Open" and "Close" state per click
-	jQuery(".st-toggle-action").toggle(function(){
-		jQuery(this).addClass("active");
-		}, function () {
-		jQuery(this).removeClass("active");
-	});
-	//Slide up and down on click
-	jQuery(".st-toggle-action").click(function(){
-		jQuery(this).next(".st-toggle-content").slideToggle();
-	});
+jQuery(".st-toggle-content").hide();
+//Switch the "Open" and "Close" state per click
+jQuery(".st-toggle-action").toggle(function() {
+  jQuery(this).addClass("active");
+}, function() {
+  jQuery(this).removeClass("active");
+});
+//Slide up and down on click
+jQuery(".st-toggle-action").click(function() {
+  jQuery(this).next(".st-toggle-content").slideToggle();
+});
 
 
 /*-----------------------------------------------------------------------------------*/
-/*	jQuery Accordion
-/*-----------------------------------------------------------------------------------*/	
+/*  jQuery Accordion
+/*-----------------------------------------------------------------------------------*/
 jQuery(document).ready(function() {
-//ACCORDION BUTTON ACTION (ON CLICK DO THE FOLLOWING)
-jQuery('.st-accordion-title').click(function() {
-//REMOVE THE ON CLASS FROM ALL BUTTONS
-jQuery('.st-accordion-title').removeClass('active');
-//NO MATTER WHAT WE CLOSE ALL OPEN SLIDES
-jQuery('.st-accordion-content').slideUp('normal');
-//IF THE NEXT SLIDE WASN'T OPEN THEN OPEN IT
-if(jQuery(this).next().is(':hidden') == true) {
-//ADD THE ON CLASS TO THE BUTTON
-jQuery(this).addClass('active');
-//OPEN THE SLIDE
-jQuery(this).next().slideDown('normal');
-}
+  //ACCORDION BUTTON ACTION (ON CLICK DO THE FOLLOWING)
+  jQuery('.st-accordion-title').click(function() {
+    //REMOVE THE ON CLASS FROM ALL BUTTONS
+    jQuery('.st-accordion-title').removeClass('active');
+    //NO MATTER WHAT WE CLOSE ALL OPEN SLIDES
+    jQuery('.st-accordion-content').slideUp('normal');
+    //IF THE NEXT SLIDE WASN'T OPEN THEN OPEN IT
+    if (jQuery(this).next().is(':hidden') == true) {
+      //ADD THE ON CLASS TO THE BUTTON
+      jQuery(this).addClass('active');
+      //OPEN THE SLIDE
+      jQuery(this).next().slideDown('normal');
+    }
+  });
+  // CLOSES ALL S ON PAGE LOAD
+  jQuery('.st-accordion-content').hide();
 });
-// CLOSES ALL S ON PAGE LOAD
-jQuery('.st-accordion-content').hide();
-}); 

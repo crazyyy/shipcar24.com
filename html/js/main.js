@@ -1,0 +1,2 @@
+function updatePostViews(a,t){$.ajax({type:"post",dataType:"json",url:childBlogJsMain.viewsUrl,data:{action:"update_post_views",post_id:a,nonce:t},success:function(a){"success"===a.type}})}$(window).on("load hashchange",function(a){var t=$(window.location.hash.replace("!",""));if(t.length){var e=t.data("update-views"),s=t.data("nonce");updatePostViews(e,s)}});
+//# sourceMappingURL=maps/main.js.map
