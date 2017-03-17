@@ -1,0 +1,1 @@
+var phone = {standard:{number:"(888) 666-8929",link:"8886668929"},mobile:{number:"(888) 998-8552",link:"8889988552"}};
