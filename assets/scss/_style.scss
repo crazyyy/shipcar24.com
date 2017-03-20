@@ -9259,15 +9259,6 @@ button.close {
   animation-name: slideOutUp;
 }
 
-@font-face {
-  font-family: FontAwesome;
-  font-weight: 400;
-  font-style: normal;
-
-  src: url(../fonts/fontawesome-webfont.eot?v=4.5.0);
-  src: url(../fonts/fontawesome-webfont.eot?#iefix&v=4.5.0) format('embedded-opentype'), url(../fonts/fontawesome-webfont.woff2?v=4.5.0) format('woff2'), url(../fonts/fontawesome-webfont.woff?v=4.5.0) format('woff'), url(../fonts/fontawesome-webfont.ttf?v=4.5.0) format('truetype'), url(../fonts/fontawesome-webfont.svg?v=4.5.0#fontawesomeregular) format('svg');
-}
-
 .fa {
   font: normal normal normal 14px/1 FontAwesome;
   font-size: inherit;
@@ -14547,7 +14538,7 @@ section .container {
   padding-bottom: 150px;
 
   background-color: #072a49;
-  background-image: url(../img/headers/head-1.jpg);
+  background-image: url(../img/head-1.jpg);
   h1 {
     font-size: 3em;
     font-weight: 200;
@@ -14579,7 +14570,7 @@ section.video h2 strong {
     height: 60px;
     margin: 15px 60px;
 
-    background-image: url(../img/logos/partners.png);
+    background-image: url(../img/partners.png);
     background-repeat: no-repeat;
     background-size: 802px 120px;
     span {
@@ -14987,7 +14978,7 @@ section.video {
 }
 
 .why-montway header {
-  background-image: url(../img/headers/head-4.jpg);
+  background-image: url(../img/head-4.jpg);
 }
 
 .reasons {
@@ -15050,7 +15041,7 @@ section.video {
 
 @media (max-width: 992px) {
   .why-montway header {
-    background-image: url(../img/headers/head-4-medium.jpg);
+    background-image: url(../img/head-4-medium.jpg);
   }
 
   .reasons {
@@ -15085,7 +15076,7 @@ section.video {
 
 @media (max-width: 768px) {
   .why-montway header {
-    background-image: url(../img/headers/head-4-small.jpg);
+    background-image: url(../img/head-4-small.jpg);
   }
 
   .reasons .row div {
@@ -15131,7 +15122,7 @@ section.video {
     padding-top: 120px;
     padding-bottom: 80px;
 
-    background-image: url(../img/headers/head-5.jpg);
+    background-image: url(../img/head-5.jpg);
     h1 {
       font-weight: 200;
     }
@@ -15164,7 +15155,7 @@ section.video {
 @media (max-width: 992px) {
   .landing-org {
     header {
-      background-image: url(../img/headers/head-5-medium.jpg);
+      background-image: url(../img/head-5-medium.jpg);
     }
     .main-nav {
       height: 80px;
@@ -15174,7 +15165,7 @@ section.video {
 
 @media (max-width: 768px) {
   .landing-org header {
-    background-image: url(../img/headers/head-5-small.jpg);
+    background-image: url(../img/head-5-small.jpg);
   }
 }
 
@@ -15510,7 +15501,7 @@ section.video {
 
 .how-it-works {
   header {
-    background-image: url(../img/headers/head-3.jpg);
+    background-image: url(../img/head-3.jpg);
   }
   .steps {
     .panel {
@@ -15643,13 +15634,13 @@ section.video {
 
 @media (max-width: 992px) {
   .how-it-works header {
-    background-image: url(../img/headers/head-3-medium.jpg);
+    background-image: url(../img/head-3-medium.jpg);
   }
 }
 
 @media (max-width: 768px) {
   .how-it-works header {
-    background-image: url(../img/headers/head-3-small.jpg);
+    background-image: url(../img/head-3-small.jpg);
   }
 }
 
@@ -15668,7 +15659,7 @@ section.video {
 
 .how-it-works-b {
   header {
-    background-image: url(../img/headers/head-18.jpg);
+    background-image: url(../img/head-18.jpg);
   }
   .step-nav {
     padding-bottom: 30px;
@@ -15729,7 +15720,7 @@ section.video {
 
 @media (max-width: 992px) {
   .how-it-works-b header {
-    background-image: url(../img/headers/head-18-medium.jpg);
+    background-image: url(../img/head-18-medium.jpg);
   }
 }
 
@@ -15748,7 +15739,7 @@ section.video {
   }
 
   .how-it-works-b header {
-    background-image: url(../img/headers/head-18-small.jpg);
+    background-image: url(../img/head-18-small.jpg);
   }
 }
 
@@ -15861,7 +15852,7 @@ section.video {
 
 .door-to-door {
   header {
-    background-image: url(../img/headers/head-6.jpg);
+    background-image: url(../img/head-6.jpg);
   }
   .page-intro {
     h4 {
@@ -15900,13 +15891,13 @@ section.video {
   }
 
   .door-to-door header {
-    background-image: url(../img/headers/head-6-medium.jpg);
+    background-image: url(../img/head-6-medium.jpg);
   }
 }
 
 @media (max-width: 768px) {
   .door-to-door header {
-    background-image: url(../img/headers/head-6-small.jpg);
+    background-image: url(../img/head-6-small.jpg);
   }
 }
 
@@ -15918,7 +15909,7 @@ section.video {
 
 .enclosed {
   header {
-    background-image: url(../img/headers/head-2.jpg);
+    background-image: url(../img/head-2.jpg);
   }
   section {
     font-size: 18px;
@@ -15978,19 +15969,19 @@ section.video {
   }
 
   .enclosed header {
-    background-image: url(../img/headers/head-2-medium.jpg);
+    background-image: url(../img/head-2-medium.jpg);
   }
 }
 
 @media (max-width: 768px) {
   .enclosed header {
-    background-image: url(../img/headers/head-2-small.jpg);
+    background-image: url(../img/head-2-small.jpg);
   }
 }
 
 .expedited {
   header {
-    background-image: url(../img/headers/head-9.jpg);
+    background-image: url(../img/head-9.jpg);
   }
   .features.horizontal .container {
     padding-bottom: 0;
@@ -16034,13 +16025,13 @@ section.video {
 
 @media (max-width: 992px) {
   .expedited header {
-    background-image: url(../img/headers/head-9-medium.jpg);
+    background-image: url(../img/head-9-medium.jpg);
   }
 }
 
 @media (max-width: 768px) {
   .expedited header {
-    background-image: url(../img/headers/head-9-small.jpg);
+    background-image: url(../img/head-9-small.jpg);
   }
 }
 
@@ -16056,7 +16047,7 @@ section.video {
 
 .who-is-using {
   header {
-    background-image: url(../img/headers/head-8.jpg);
+    background-image: url(../img/head-8.jpg);
   }
   .features .container {
     padding-bottom: 0;
@@ -16107,7 +16098,7 @@ section.video {
 
 @media (max-width: 992px) {
   .who-is-using header {
-    background-image: url(../img/headers/head-8-medium.jpg);
+    background-image: url(../img/head-8-medium.jpg);
   }
 }
 
@@ -16117,7 +16108,7 @@ section.video {
   }
 
   .who-is-using header {
-    background-image: url(../img/headers/head-8-small.jpg);
+    background-image: url(../img/head-8-small.jpg);
   }
 }
 
@@ -16129,7 +16120,7 @@ section.video {
 
 .tips {
   header {
-    background-image: url(../img/headers/head-11.jpg);
+    background-image: url(../img/head-11.jpg);
   }
   .carousel {
     h5 {
@@ -16242,13 +16233,13 @@ section.video {
 
 @media (max-width: 992px) {
   .tips header {
-    background-image: url(../img/headers/head-11-medium.jpg);
+    background-image: url(../img/head-11-medium.jpg);
   }
 }
 
 @media (max-width: 768px) {
   .tips header {
-    background-image: url(../img/headers/head-11-small.jpg);
+    background-image: url(../img/head-11-small.jpg);
   }
 }
 
@@ -16280,7 +16271,7 @@ section.video {
 
       animation: backgroundScroll 35s linear infinite;
 
-      background: url(../img/headers/reviews.png) center;
+      background: url(../img/reviews.png) center;
     }
     h4 {
       margin-top: .5em;
@@ -16714,7 +16705,7 @@ section.video {
     padding-bottom: 0;
 
     background-color: #0f7590;
-    background-image: url(../img/enterprise/header.png);
+    background-image: url(../img/header.png);
     h1 {
       font-size: 3.5em;
       font-weight: 200;
@@ -17197,7 +17188,7 @@ section.video {
   header {
     padding-bottom: 80px;
 
-    background-image: url(../img/headers/head-12.jpg);
+    background-image: url(../img/head-12.jpg);
     background-position: center bottom;
     .help-center-search {
       position: relative;
@@ -17443,13 +17434,13 @@ section.video {
 
 @media (max-width: 992px) {
   .help-center header {
-    background-image: url(../img/headers/head-12-medium.jpg);
+    background-image: url(../img/head-12-medium.jpg);
   }
 }
 
 @media (max-width: 768px) {
   .help-center header {
-    background-image: url(../img/headers/head-12-small.jpg);
+    background-image: url(../img/head-12-small.jpg);
   }
 }
 
@@ -17487,7 +17478,7 @@ section.video {
 
 .contact-us {
   header {
-    background-image: url(../img/headers/head-7.jpg);
+    background-image: url(../img/head-7.jpg);
   }
   .table {
     margin-bottom: 1.5em;
@@ -17514,13 +17505,13 @@ section.video {
 
 @media (max-width: 992px) {
   .contact-us header {
-    background-image: url(../img/headers/head-7-medium.jpg);
+    background-image: url(../img/head-7-medium.jpg);
   }
 }
 
 @media (max-width: 768px) {
   .contact-us header {
-    background-image: url(../img/headers/head-7-small.jpg);
+    background-image: url(../img/head-7-small.jpg);
   }
 }
 
@@ -17704,7 +17695,7 @@ section.video {
 
 .history {
   header {
-    background-image: url(../img/headers/head-13.jpg);
+    background-image: url(../img/head-13.jpg);
     h1 {
       font-size: 42px;
     }
@@ -17720,13 +17711,13 @@ section.video {
 
 @media (max-width: 992px) {
   .history header {
-    background-image: url(../img/headers/head-13-medium.jpg);
+    background-image: url(../img/head-13-medium.jpg);
   }
 }
 
 @media (max-width: 768px) {
   .history header {
-    background-image: url(../img/headers/head-13-small.jpg);
+    background-image: url(../img/head-13-small.jpg);
   }
 }
 
@@ -17973,7 +17964,7 @@ section.video {
 
 .legal {
   header {
-    background-image: url(../img/headers/head-10.jpg);
+    background-image: url(../img/head-10.jpg);
   }
   .page-block {
     h3 {
@@ -17987,13 +17978,13 @@ section.video {
 
 @media (max-width: 992px) {
   .legal header {
-    background-image: url(../img/headers/head-10-medium.jpg);
+    background-image: url(../img/head-10-medium.jpg);
   }
 }
 
 @media (max-width: 768px) {
   .legal header {
-    background-image: url(../img/headers/head-10-small.jpg);
+    background-image: url(../img/head-10-small.jpg);
   }
 }
 
@@ -19040,7 +19031,7 @@ section.video {
 
 .move-for-hunger-a {
   header {
-    background-image: url(../img/headers/head-17.jpg);
+    background-image: url(../img/head-17.jpg);
     .lead strong {
       background-color: #6aca41;
     }
@@ -19076,7 +19067,7 @@ section.video {
 
 .move-for-hunger-b {
   header {
-    background-image: url(../img/headers/head-16.jpg);
+    background-image: url(../img/head-16.jpg);
     .lead strong {
       background-color: #00bad0;
     }
