@@ -38,7 +38,6 @@
   <div id="ember-we-are-open-banner"></div>
   <div itemscope itemtype="http://schema.org/Organization" class="hide">
     <span itemprop="name">Montway Auto Transport</span>
-    <link itemprop="url" href="index.html">
     <img itemprop="logo" src="<?php echo get_template_directory_uri(); ?>/img/mw-logo.png" alt="Montway Auto Transport" />
     <div itemprop="contactPoint" itemscope itemtype="http://schema.org/ContactPoint">
       <span itemprop="telephone">+1-888-666-8929</span>
