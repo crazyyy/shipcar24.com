@@ -1,18 +1,29 @@
 <?php get_header(); ?>
   <?php if (have_posts()): while (have_posts()) : the_post(); ?>
-    <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-      <h1 class="page-title inner-title"><?php the_title(); ?></h1>
+    <div class="container">
+      <div class="text-center animated fadeInUp">
+        <h1><?php the_title(); ?></h1>
+      </div>
+    </div>
+    <!-- .container -->
+  </header>
+  <section class="page-block">
+    <div class="container">
       <?php the_content(); ?>
-      <?php edit_post_link(); ?>
+    </div>
+  </section>
 
-    </article>
-  <?php endwhile; else: // If 404 page error ?>
-    <article>
 
-      <h2 class="page-title inner-title"><?php _e( 'Sorry, nothing to display.', 'wpeasy' ); ?></h2>
+  <?php /* ?>
+  <section class="call-to-action primary hidden-md hidden-sm hidden-xs">
+    <div class="container">
+      <h3>Ready to get the best in auto transport?</h3>
+      <a href="https://www.montway.com/get-a-quote" class="btn btn-lg btn-outline quote-link">Get An Instant Quote<i class="fa fa-chevron-right fa-fw"></i></a>
+      <p class="lead text-muted">Or call <a href="tel:8886668929">(888) 666-8929</a> to speak directly to our Car Shipping Advisors now!</p>
+    </div>
+  </section>
+  <?php */ ?>
 
-    </article>
-  <?php endif; ?>
-<?php get_sidebar(); ?>
+  <?php endwhile; endif; ?>
 <?php get_footer(); ?>
