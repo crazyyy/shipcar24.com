@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="format-detection" content="telephone=no">
 
-  <meta name="montweb-client-app/config/environment" content="%7B%22modulePrefix%22%3A%22montweb-client-app%22%2C%22environment%22%3A%22production%22%2C%22baseURL%22%3A%22/%22%2C%22locationType%22%3A%22auto%22%2C%22EmberENV%22%3A%7B%22FEATURES%22%3A%7B%7D%7D%2C%22contentSecurityPolicy%22%3A%7B%22font-src%22%3A%22%27self%27%20https%3A//d1d9oqfe9g83w6.cloudfront.net%22%2C%22default-src%22%3A%22%27none%27%22%2C%22script-src%22%3A%22%27self%27%22%2C%22connect-src%22%3A%22%27self%27%22%2C%22img-src%22%3A%22%27self%27%22%2C%22style-src%22%3A%22%27self%27%22%2C%22media-src%22%3A%22%27self%27%22%7D%2C%22APP%22%3A%7B%22name%22%3A%22montweb-client-app%22%2C%22version%22%3A%220.0.0+83caf10b%22%7D%2C%22apiURL%22%3A%22//checkout.montway.com%22%2C%22searchURL%22%3A%22//www.montway.com/es%22%2C%22contentSecurityPolicyHeader%22%3A%22Content-Security-Policy-Report-Only%22%2C%22exportApplicationGlobal%22%3Afalse%7D" />
+  <meta name="montweb-client-app/config/environment" content="" />
 
 
   <title><?php wp_title( '' ); ?><?php if ( wp_title( '', false ) ) { echo ' :'; } ?> <?php bloginfo( 'name' ); ?></title>
@@ -37,10 +37,10 @@
 
   <div id="ember-we-are-open-banner"></div>
   <div itemscope itemtype="http://schema.org/Organization" class="hide">
-    <span itemprop="name">Montway Auto Transport</span>
-    <img itemprop="logo" src="<?php echo get_template_directory_uri(); ?>/img/mw-logo.png" alt="Montway Auto Transport" />
+    <span itemprop="name"ShipCar24 Auto Transport</span>
+    <img itemprop="logo" src="<?php echo get_template_directory_uri(); ?>/img/mw-logo.png" alt="ShipCar24 Auto Transport" />
     <div itemprop="contactPoint" itemscope itemtype="http://schema.org/ContactPoint">
-      <span itemprop="telephone">+1-888-666-8929</span>
+      <span itemprop="telephone">+1-916-300-5174</span>
       <span itemprop="contactType">Sales</span>
       <span itemprop="areaServed">US</span>
       <span itemprop="contactOption">TollFree</span>
@@ -48,9 +48,9 @@
     Contact Details:
     <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
       Main address:
-      <span itemprop="streetAddress">1400 East Touhy Ave Suite 255</span>
-      <span itemprop="postalCode">60018</span>
-      <span itemprop="addressLocality">Des Plaines, IL</span>
+      <span itemprop="streetAddress">4366 Auburn, Blvd, Suite 102</span>
+      <span itemprop="postalCode">95841</span>
+      <span itemprop="addressLocality">Sacramento, CA</span>
     </div>
     <a itemprop="sameAs" href="#">Facebook</a>
     <a itemprop="sameAs" href="#">Twitter</a>
@@ -63,14 +63,14 @@
   <header>
     <nav class="main-nav stickable">
       <a href="/" id="logo">
-        <img src="<?php echo get_template_directory_uri(); ?>/img/logo-white.png" alt="Montway Auto Transport" width="200" height="37">
+        <img src="<?php echo get_template_directory_uri(); ?>/img/logo-white.png" alt="ShipCar24 Auto Transport" width="200" height="37">
       </a>
       <div class="hidden-lg hidden-md">
         <button type="button" class="btn nav-btn"><i class="icon icon-bars"></i></button>
-        <a href="tel:8889988552" class="btn call-btn"><i class="fa fa-phone"></i> Call</a>
+        <a href="tel:8889998877" class="btn call-btn"><i class="fa fa-phone"></i> Call</a>
       </div>
       <div class="call-links visible-lg visible-md">
-        <a href="tel:8886668929" class="tel">(888) 666-8929</a>
+        <a href="tel:9163005174" class="tel">(916) 300-5174</a>
         <a href="#" class="request-call" data-placement="bottom"><i class="icon icon-phone-call-solid"></i> Request a call</a>
       </div>
       <?php wpeHeadNav(); ?>
